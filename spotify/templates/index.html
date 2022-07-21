@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'titulo' %} Música para todos - Spotify {% endblock %}
+
+
+{% block 'conteudo' %}
+  <section id="home" class="d-flex"> <!-- Inicio sessão -->
+      <div class="container align-self-center">
+        <div class="row">
+          <div class="col-md-12 centralizar">
+
+            <div id="carousel-spotify" class="carousel slider" data-ride="carousel"> <!-- inicio carousel -->
+              <div class="carousel-inner"> <!-- inicio inner -->
+
+                <div class="carousel-item active">
+                  <h1>Música para Todos</h1>
+                  <a href="" class="btn btn-custom btn-roxo btn-lg">Aproveite o Spotify free</a>
+                  <a href="" class="btn btn-custom btn-branco btn-lg">Obter Spotify Premium</a>
+                </div>
+
+                <div class="carousel-item">
+                  <h1>As melhores rádios</h1>
+                  <a href="" class="btn btn-custom btn-branco btn-lg">
+                    <i class="fas fa-music"></i> Ouça agora
+                  </a>
+                </div>
+
+              </div> <!-- final inner -->
+
+              <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+                <i class="fas fa-angle-left fa-3x"></i>
+              </a>
+              <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+                <i class="fas fa-angle-right fa-3x"></i>
+              </a>
+            </div> <!-- final carousel -->
+
+          </div>
+        </div>
+      </div>
+    </section> <!-- Final sessão -->
+
+    <section id="servicos" class="caixa"> <!-- Inicio sessão -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"> <!-- imagens da sessão -->
+            <div class="row">
+              <div class="col-md-6 d-none d-md-block">
+                <img src="{% static 'imagens/img1.jpg' %}" class="albuns img-fluid">
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <img src="{% static 'imagens/img2.jpg' %}" class="albuns img-fluid">
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <img src="{% static 'imagens/img3.jpg' %}" class="albuns img-fluid">
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <img src="{% static 'imagens/img4.jpg' %}" class="albuns img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6"> <!-- textos da sessão -->
+
+            <h2>O que o Spotify tem?</h2>
+
+            <h3>Musicas</h3>
+            <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria</p>
+
+            <h3>Playlists</h3>
+            <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria</p>
+
+            <h3>Novos lançamentos</h3>
+            <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria</p>
+
+          </div>
+        </div>
+      </div>
+    </section> <!-- Final sessão -->
+
+    <section id="recursos" class="caixa"> <!-- Inicio sessão -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"> <!-- textos da sessão -->
+
+            <h2>Facil</h2>
+
+            <h3>Buscar</h3>
+            <p>Lorem Ipsum é simplesmente um texto fictício da indústria</p>
+
+            <h3>Navegar</h3>
+            <p>Lorem Ipsum é simplesmente um texto fictício da indústria</p>
+
+            <h3>Descobrir</h3>
+            <p>Lorem Ipsum é simplesmente um texto fictício da indústria</p>
+
+          </div>
+
+          <div class="col-md-8 d-none d-md-block"> <!-- imagem rotacionada -->
+            <div class="row rotacionar">
+              <div class="col-md-6">
+                <img src="{% static 'imagens/iphone1.png' %}" class="img-fluid">
+              </div>
+
+              <div class="col-md-6">
+                <img src="{% static 'imagens/iphone2.png' %}" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- Final sessão -->
+{% endblock %}

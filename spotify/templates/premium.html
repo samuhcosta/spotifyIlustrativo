@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'titulo' %} Premium - Spotify {% endblock %}
+
+{% block 'conteudo' %}
+
+
+    <section style="padding-top: 100px" id="servicos" class="caixa"> <!-- Inicio sessão -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"> <!-- imagens da sessão -->
+            <div class="row">
+              <div class="col-md-6 d-none d-md-block">
+                <img src="{% static 'imagens/img1.jpg' %}" class="albuns img-fluid">
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <img src="{% static 'imagens/img2.jpg' %}" class="albuns img-fluid">
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <img src="{% static 'imagens/img3.jpg' %}" class="albuns img-fluid">
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <img src="{% static 'imagens/img4.jpg' %}" class="albuns img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6"> <!-- textos da sessão -->
+
+            <h2>Pacote premium</h2>
+
+            <h3>Assina já <a href="">clicando aqui!</a></h3>
+            <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria</p>
+
+          </div>
+        </div>
+      </div>
+    </section> <!-- Final sessão -->
+
+
+{% endblock %}
+
